@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de socios</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sistema de gestión de socios</h1>
+    </header>
+
+    <main>
+        <section class="panel">
+            <h2>Agregar socio</h2>
+            <form id="formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="nombre" placeholder="Ingrese el nombre">
+
+                <label for="apellido">Apellido</label>
+                <input type="text" class="apellido" placeholder="Ingrese el apellido">
+
+                <label for="dni">DNI</label>
+                <input type="text" class="dni" placeholder="Ingrese el DNI">
+
+                <label for="mail">Mail</label>
+                <input type="email" class="mail" placeholder="Ingrese el mail">
+
+                <button type="button" class="btn-agregar">Agregar socio</button>
+            </form>
+        </section>
+
+        
+        <section>
+            <div class="resumen">
+                <div class="dato">
+                    <span class="total-socios">0</span>
+                    <p>Socios</p>
+                </div>
+                <div class="dato">
+                    <span class="socios-activos">0</span>
+                    <p>Cuotas pagadas</p>
+                </div>
+                <div class="dato">
+                    <span class="total-recaudado">$0</span>
+                    <p>Recaudado</p>
+                </div>
+            </div>
+
+            <input type="text" class="buscador" placeholder="Buscar por nombre, apellido o DNI...">
+
+            <div class="mensaje"></div>
+
+            <div class="lista-socios"></div>
+        </section>
+    </main>
+</body>
+</html>
